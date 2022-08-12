@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Điểm : <input type="text" id="so diem"><br><br>
+ <button onclick="check()">check</button>
+
+</body>
+</html>
+<script>
+    function check(){
+        let a = document.getElementById("so diem").value
+        if ( a>"8"){
+            alert ("gioi")
+        }
+        if (a>"6,5"){
+            alert ("kha")
+        }
+        if (a>"5"){
+            alert ( "trungbinh")
+        }
+        if (a<"5"){
+            alert ("yếu")
+        }
+    }
+</script>
