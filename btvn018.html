@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so"><br><br>
+<button onclick="kiemtra()">kiemtra</button>
+</body>
+</html>
+<script>
+    function kiemtra() {
+        let check = true
+        let a = Number(document.getElementById("so").value);
+        for (let i=2; i<a;i++){
+            if (a%i==0) {
+                check = false
+                break
+            }
+        }
+
+        if (check == true){
+            document.write("la so nguyen to")
+        }else
+            document.write("không là sô nguyên tô")
+    }
+
+</script>
